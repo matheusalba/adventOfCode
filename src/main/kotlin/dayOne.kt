@@ -13,13 +13,14 @@ fun main(){
         if (it != "")
         {sum+=it.toInt();}
         else
-        { if(sum!=0) {output.add(sum)} ; sum = 0}
+        {if(sum!=0) {output.add(sum)} ; sum = 0}
         sum}
 
     if (vector[vector.size-1]!=0){output.add(sum)}
+
     val higher = output.reduce{ x,y -> if(x > y) {x} else {y} }
 
+    output.sort()
 
-
-
+    val lastTree = output[output.size-1] + output[output.size-2] + output[output.size-3]
 }
